@@ -1,38 +1,131 @@
 .App {
   text-align: center;
+  background-color: #d7e0f1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-img-container{
+  display:flex;
+  justify-content: center;
+  margin-top: 10vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-img{
+  display:flex;  
+  width: 40%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
 }
+
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  padding-left: 1em;
+  justify-content: center;
+  font-size: calc(8px + 1vmin);
+  font-family: Merriweather;
+  color: #000;
+}
+.App-trap-container {
+  position: relative;
+  /*Change this to test responsive*/
+  
+  /*change this to test responsive*/
+  height: 35em;
+}
+.App-trap-container svg {
+  position: absolute;
+  fill: #7da4ce;
+  
+}
+.App-trap-content {
+  display: inline-block;
+  position: relative;
+  top: 20%;
+  height: 60%;
+  width: 100%;
+  bottom: 20%;
+  justify-items: center;
+  align-content: center;
+  font-size: calc(10px + 3vmin);
+  font-family: Merriweather;
+  letter-spacing: 3px;
+  color: white;
+}
+.App-trap-content-intro {
+  display: inline-block;
+  width: 80%;
+  justify-self: center;
+  font-size: calc(10px + 2vmin);
+  font-family: Merriweather;
+  letter-spacing: 2px;
+  line-height:1cm;
+  color: white;
+}
+
+.App-intro {
+  min-height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 3vmin);
+  font-family: Merriweather;
+  letter-spacing: 2px;
+  color:#000;
+}
+
+.App-intro-more {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+}
+.App-intro-dash{
+  display: block;
+  justify-content: flex-end;
+  height: auto;
+  width: 10vh;
+  animation: App-test-div-flash infinite 2s linear;
+}
+
+.App-test {
+  display: flex;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+.App-test-div {
+  display: block;
+  background-color: #61dafb;
+  height: 10vh;
+  width: 10vh;
+  animation: App-test-div-flash infinite 2s linear;
+}
+.Blog-Post-Container{
+  height: 20vh;
+  width: auto;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+@keyframes App-test-div-flash {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
