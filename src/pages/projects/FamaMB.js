@@ -1,8 +1,7 @@
+// import React, {Component} from "react";
 
-// import React from 'react';
-
-// var perf = "<h1>Hello, world!</h1>";
-// var template = { __html: perf };
+// var __html = require("../../assets/coursework/hw7_fmmcbeth.html");
+// var template = { __html: __html };
 
 // class FamaMBhtml extends React.Component {
 //   render() {

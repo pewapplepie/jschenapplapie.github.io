@@ -42,8 +42,6 @@ const Content_h1 = styled.div`
   padding-left: 3vh;
 `;
 const Pic_Wrapper = styled.div`
-  width: auto;
-  height: auto;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -69,10 +67,10 @@ const Profile_Img = styled.img`
   }
 `;
 const Content_Social = styled.div`
-  display:flex;
-  flex-direction:row;
+  display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
-  width:30%;
+  width: 30%;
 `;
 
 const Content_Motto = styled.div`
@@ -104,7 +102,7 @@ const Intro_p1 = styled.div`
   padding: 3%;
   color: white;
   font-family: Merriweather;
-  font-size: 2vmin;
+  font-size: calc(4px + 2vmin);
   letter-spacing: 1px;
   line-height: 1cm;
   flex-direction: column;
@@ -116,6 +114,7 @@ const Intro_p2 = styled(Intro_p1)``;
 const Intro_title = styled.h2`
   margin: auto;
   width: 100%;
+  height: auto;
 `;
 const Intro_title2 = styled(Intro_title)``;
 
@@ -126,7 +125,6 @@ const hyperstyle = {
   fontWeight: "bold",
 };
 
-  
 function blinkingEffect() {
   return keyframes`
       50% {
@@ -153,24 +151,17 @@ function IntroTrap() {
           <Content_h1>
             Hi, I'm <b>Jer-Shen Chen</b>, aka <b>Jeffrey.</b>
           </Content_h1>
-          <Pic_Wrapper>
-            <Profile_Pic_Container>
-              <Profile_Img src={myprofile_pic} />
-            </Profile_Pic_Container>
-          </Pic_Wrapper>
+          {/* <Pic_Wrapper> */}
+          <Profile_Pic_Container>
+            <Profile_Img src={myprofile_pic} />
+          </Profile_Pic_Container>
+          {/* </Pic_Wrapper> */}
           <Content_Social>
-            
-              <SocialIcon
-              
-                url="https://www.linkedin.com/in/jeffrey-chen-537155173/"
-                target="_blank"
-              />
-              <SocialIcon
-              
-                url="https://github.com/pewapplepie"
-                target="_blank"
-              />
-            
+            <SocialIcon
+              url="https://www.linkedin.com/in/jeffrey-chen-537155173/"
+              target="_blank"
+            />
+            <SocialIcon url="https://github.com/pewapplepie" target="_blank" />
           </Content_Social>
           <Content_Motto>
             I love Finance & Programming
@@ -194,7 +185,8 @@ function IntroTrap() {
             <Intro_title2>About .. </Intro_title2>
             Jeffrey is a MFE candidate at UCLA Anderson School of Management.
             His course projects across different topics within empirical
-            analysis, derivatives, fixed income, investment and financial decision making. 
+            analysis, derivatives, fixed income, investment and financial
+            decision making.
             <p />
             Previously, Jeffrey was an Quantitative Analyst Intern at{" "}
             <a
@@ -207,9 +199,10 @@ function IntroTrap() {
             ,where as an analyst he covered time series analysis, systematic
             backtesting and construction on different portfolios.
             <p />
-            Over the summer of 2019, Jeffrey competed in International Quant
+            Over the year of 2019, Jeffrey competed in International Quant
             Championship hosted by the WorldQuant LLC and made into natioanl top
-            5. Prior to entering Finance, Jeffrey worked as an Undergraduate
+            5. <p />
+            Prior to entering Finance, Jeffrey worked as an Undergraduate
             Researcher under{""}
             <a
               href="https://cchlabblog.wordpress.com/"
