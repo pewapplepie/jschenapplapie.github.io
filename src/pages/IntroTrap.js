@@ -1,16 +1,17 @@
 import styled, { keyframes } from "styled-components";
 import myprofile_pic from "../assets/mypic.jpg";
-import Intro from "./IntroPage";
+import { SocialIcon } from "react-social-icons";
 
 const TrapContainer = styled.div`
   position: relative;
-  height: 100em;
+  height: 120em;
   display: flex;
 `;
 const SvgContainer = {
   position: "absolute",
   fill: "#7da4ce",
   width: "100%",
+  height: "100%",
 };
 
 const Contents = styled.div`
@@ -30,7 +31,7 @@ const Content_top = styled.div`
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  margin:auto;
+  margin: auto;
 `;
 const Content_h1 = styled.div`
   align-self: flex-start;
@@ -38,7 +39,7 @@ const Content_h1 = styled.div`
   font-family: Merriweather;
   letter-spacing: 3px;
   color: white;
-  padding-left:3vh;
+  padding-left: 3vh;
 `;
 const Pic_Wrapper = styled.div`
   width: auto;
@@ -46,6 +47,7 @@ const Pic_Wrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 `;
 
 const Profile_Pic_Container = styled.div`
@@ -53,9 +55,9 @@ const Profile_Pic_Container = styled.div`
   height: 25vh;
   border-radius: 50%;
   overflow: hidden;
-  border-width:thick;
-  border-color:#C0C0C0;
-  border-style:solid;
+  border-width: thick;
+  border-color: #c0c0c0;
+  border-style: solid;
 `;
 const Profile_Img = styled.img`
   width: 100%;
@@ -65,6 +67,12 @@ const Profile_Img = styled.img`
   :hover& {
     transform: scale(1.25);
   }
+`;
+const Content_Social = styled.div`
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  width:30%;
 `;
 
 const Content_Motto = styled.div`
@@ -78,26 +86,27 @@ const Content_Motto = styled.div`
 const Blink_wrapper = styled.div`
   display: inline-block;
   padding-left: 10px;
-  animation: ${blinkingEffect} 2s linear infinite;
+  animation: ${blinkingEffect} 1.5s linear infinite;
 `;
 
 const Content_Intro = styled.div`
   display: flex;
-  height:70%;
+  height: 70%;
   width: 100%;
   flex-direction: row;
   justify-content: space-evenly;
-
-  padding-top:5vh;
+  padding-top: 5vh;
 `;
 
 const Intro_p1 = styled.div`
   width: 40%;
   height: 80%;
+  padding: 3%;
   color: white;
   font-family: Merriweather;
+  font-size: 2vmin;
   letter-spacing: 1px;
-  line-height: 0.8cm;
+  line-height: 1cm;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
@@ -105,7 +114,7 @@ const Intro_p1 = styled.div`
 const Intro_p2 = styled(Intro_p1)``;
 
 const Intro_title = styled.h2`
-  margin:auto;
+  margin: auto;
   width: 100%;
 `;
 const Intro_title2 = styled(Intro_title)``;
@@ -117,6 +126,7 @@ const hyperstyle = {
   fontWeight: "bold",
 };
 
+  
 function blinkingEffect() {
   return keyframes`
       50% {
@@ -148,6 +158,20 @@ function IntroTrap() {
               <Profile_Img src={myprofile_pic} />
             </Profile_Pic_Container>
           </Pic_Wrapper>
+          <Content_Social>
+            
+              <SocialIcon
+              
+                url="https://www.linkedin.com/in/jeffrey-chen-537155173/"
+                target="_blank"
+              />
+              <SocialIcon
+              
+                url="https://github.com/pewapplepie"
+                target="_blank"
+              />
+            
+          </Content_Social>
           <Content_Motto>
             I love Finance & Programming
             <Blink_wrapper> _ </Blink_wrapper>
@@ -170,9 +194,7 @@ function IntroTrap() {
             <Intro_title2>About .. </Intro_title2>
             Jeffrey is a MFE candidate at UCLA Anderson School of Management.
             His course projects across different topics within empirical
-            analysis, derivatives and fixed income. Including ARMA/GARCH, Vector
-            Autoregressive (VAR), BDT, Curve model, Two factor Vasicek models,
-            cross-sectional factor models and Fama-MacBeth Analysis.
+            analysis, derivatives, fixed income, investment and financial decision making. 
             <p />
             Previously, Jeffrey was an Quantitative Analyst Intern at{" "}
             <a
