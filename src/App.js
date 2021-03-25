@@ -1,46 +1,23 @@
-import logo from "./logo.svg";
-import linkedin_icon from "./assets/linkedin_icon.png";
-import github_icon from "./assets/github_icon.png";
 import { SocialIcon } from "react-social-icons";
-
+import Intro from "./pages/IntroPage.js";
+import IntroTrap from "./pages/IntroTrap.js";
+import styled from "styled-components";
 import "./App.css";
+
+const AppDiv = styled.div`
+  //text-align: center;
+  background-color: #d7e0f1;
+`;
 
 function App() {
   return (
-    <div className="App">
+    <AppDiv>
       <header className="App-header">
         <p>
           <strong>Jeffrey Chen</strong> | MFE @ UCLA | B.S Chemistry @ NTU
         </p>
       </header>
-      <div class="App-trap-container">
-        <svg
-          width="100%"
-          height="100%"
-          viewBox="0 0 100 100"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-        >
-          <polygon points="0,5, 100,0 100,100 0,90"></polygon>
-        </svg>
-        <div class="App-trap-content">
-          <p>
-            Hi, I'm <b>Jer-Shen Chen</b>, aka <b>Jeffrey.</b>
-          </p>
-          <div class="App-trap-content-intro">
-            <p>
-              Finance + Programming + Math = Quantitative Finance <br/>
-               I Love Quant Finance 
-            </p>
-
-            <p>
-              I desire to combine financial knowledge with in-depth data
-              analysis and machine learning technique to surface impactful
-              insight and facilitate sound-making financial decisions
-            </p>
-          </div>
-        </div>
-      </div>
+      <IntroTrap></IntroTrap>
       <div className="App-intro">
         <div className="App-intro-more">
           <p>More about me at</p>
@@ -54,9 +31,10 @@ function App() {
         </div>
       </div>
       <div className="Blog-Post-Container">
-          course work will be updated below
+        course work will be updated below
+        <Intro></Intro>
       </div>
-    </div>
+    </AppDiv>
   );
 }
 
