@@ -87,7 +87,7 @@ const Content_Motto = styled.div`
 const Blink_wrapper = styled.div`
   display: inline-block;
   padding-left: 10px;
-  animation: ${blinkingEffect} 1.5s linear infinite;
+  animation: ${blinkingEffect} 1.1s linear infinite;
 `;
 
 const Content_Intro = styled.div`
@@ -215,9 +215,11 @@ function IntroTrap() {
               Cheng-Chih Hsu Research Group
             </a>{" "}
             for Prof. Hsu within the Analytical Chemistry area, specializing in
-            Mass Spectrometry (MALDI) and Bioinformation data analysis. Jeffrey
-            included AI-driven investment management firms, global leading hedge
-            fund, academia science research, and the software industry.
+            Mass Spectrometry (MALDI) and Bioinformation data analysis.
+            <p />
+            Jeffrey's experiences included AI-driven investment management firms, global
+            leading hedge fund, academia science research, and the software
+            industry.
           </Intro_p2>
         </Content_Intro>
       </Contents>

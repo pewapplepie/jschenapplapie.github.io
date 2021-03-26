@@ -1,10 +1,12 @@
 import { SocialIcon } from "react-social-icons";
 import Intro from "./pages/IntroPage.js";
 // import FAMAMB from "./pages/projects/FamaMB.js";
+//import EvtStudy from "./pages/projects/EvtStudy.js";
 import IntroTrap from "./pages/IntroTrap.js";
 import Header from "./pages/Header.js";
 import Experience from "./pages/Experience.js";
 import styled from "styled-components";
+import Contact from "./pages/Contact.js"
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
@@ -38,17 +40,16 @@ function Home() {
       <Header></Header>
       <IntroTrap />
       <Experience></Experience>
-      <div className="Blog-Post-Container">
-        course work will be updated below
-      </div>
+      <Contact></Contact>
     </AppDiv>
   );
 }
+
 function About() {
   return (
     <div>
-      <h1>AboutAboutAboutAboutAboutAbout
-      AboutAboutAboutAboutAboutAboutAbout
+      <h1>
+        AboutAboutAboutAboutAboutAbout AboutAboutAboutAboutAboutAboutAbout
       </h1>
     </div>
   );

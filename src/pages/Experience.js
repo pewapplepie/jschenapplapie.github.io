@@ -184,10 +184,10 @@ function Experience() {
             </LeftBlock>
             <RightBlock>
               <Context>
-                <b>• Relative Coursework:</b> Advanced Statistics, Calculus, Data
-                mining, Programming (Python), Using R for Data Analysis, Special
-                Topic on Advanced Sobware Development (BlockChain ApplicaEon),
-                Research Training for Junior
+                <b>• Relative Coursework:</b> Advanced Statistics, Calculus,
+                Data mining, Programming (Python), Using R for Data Analysis,
+                Special Topic on Advanced Sobware Development (BlockChain
+                ApplicaEon), Research Training for Junior
               </Context>
             </RightBlock>
           </DetailContainer>
@@ -195,6 +195,15 @@ function Experience() {
         <HeadingContainer>
           <Heading>Projects</Heading>
         </HeadingContainer>
+        <SectionContainer>
+          <a href="https://rpubs.com/Pewapplepie/FDM-FamaMB" target="_blank">
+            <Context>
+              Analysis of Predicting Cross-Sectional stock returns with
+              Fama-Macbeth regression: firm-marketcap, price-normalized
+              accruals, the earnings-price ratio, and 1/price.
+            </Context>
+          </a>
+        </SectionContainer>
         <SectionContainer>
           <a href="https://rpubs.com/Pewapplepie/FDM-FamaMB" target="_blank">
             <Context>
