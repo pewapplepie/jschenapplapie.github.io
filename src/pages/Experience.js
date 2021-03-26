@@ -146,10 +146,11 @@ function Experience() {
                 Replication
                 <p />
                 <b>• Investments (R):</b> CAPM, APT, Fama-French 3 Factor Model,
-                Dynamic Portfolio Selection, Portfolio Optimization • Empirical
-                Methods in Finance (R): AR model, VAR model, ARIMA model, ARCH
-                model, GARCH model, I-GARCH model, GARC-M model, EGARCH model,
-                GJR model, PCA, Fama-MacBeth <p />
+                Dynamic Portfolio Selection, Portfolio Optimization
+                <p />
+                <b>• Empirical Methods in Finance (R):</b> AR model, VAR model,
+                ARIMA model, ARCH model, GARCH model, I-GARCH model, GARC-M
+                model, EGARCH model, GJR model, PCA, Fama-MacBeth <p />
                 <b>• Derivatives (R):</b> Binomial model for various options and
                 convertible bonds, Monte Carlo Simulation, Least Squares Monte
                 Carlo, Real Options, VIX, Stochastic Volatility (Heston Model),
@@ -183,7 +184,7 @@ function Experience() {
             </LeftBlock>
             <RightBlock>
               <Context>
-                <b>Relative Coursework:</b> Advanced Statistics, Calculus, Data
+                <b>• Relative Coursework:</b> Advanced Statistics, Calculus, Data
                 mining, Programming (Python), Using R for Data Analysis, Special
                 Topic on Advanced Sobware Development (BlockChain ApplicaEon),
                 Research Training for Junior

@@ -49,6 +49,7 @@ const Pic_Wrapper = styled.div`
 `;
 
 const Profile_Pic_Container = styled.div`
+  position: relative;
   width: 25vh;
   height: 25vh;
   border-radius: 50%;
