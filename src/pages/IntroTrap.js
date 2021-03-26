@@ -41,12 +41,6 @@ const Content_h1 = styled.div`
   color: white;
   padding-left: 3vh;
 `;
-const Pic_Wrapper = styled.div`
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-`;
 
 const Profile_Pic_Container = styled.div`
   position: relative;
@@ -57,8 +51,11 @@ const Profile_Pic_Container = styled.div`
   border-width: thick;
   border-color: #c0c0c0;
   border-style: solid;
+  touch-action: none;
+  -ms-touch-action: none;
 `;
 const Profile_Img = styled.img`
+  position: relative;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -154,11 +151,11 @@ function IntroTrap() {
           <Content_h1>
             Hi, I'm <b>Jer-Shen Chen</b>, aka <b>Jeffrey.</b>
           </Content_h1>
-          {/* <Pic_Wrapper> */}
+
           <Profile_Pic_Container>
             <Profile_Img src={myprofile_pic} />
           </Profile_Pic_Container>
-          {/* </Pic_Wrapper> */}
+
           <Content_Social>
             <SocialIcon
               url="https://www.linkedin.com/in/jeffrey-chen-537155173/"
@@ -217,9 +214,9 @@ function IntroTrap() {
             for Prof. Hsu within the Analytical Chemistry area, specializing in
             Mass Spectrometry (MALDI) and Bioinformation data analysis.
             <p />
-            Jeffrey's experiences included AI-driven investment management firms, global
-            leading hedge fund, academia science research, and the software
-            industry.
+            Jeffrey's experiences included AI-driven investment management
+            firms, global leading hedge fund, academia science research, and the
+            software industry.
           </Intro_p2>
         </Content_Intro>
       </Contents>

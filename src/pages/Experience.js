@@ -12,6 +12,7 @@ const HeadingContainer = styled.div`
   text-align: center;
   justify-content: center;
   height: auto;
+  margin-bottom:5vh;
 `;
 const Heading = styled.h1`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -52,6 +53,7 @@ const DetailContainer = styled.div`
   flex-direction: row;
   width: 100%;
   height: auto;
+  margin-top: 5vh;
   margin-bottom: 5vh;
 `;
 const LeftBlock = styled.div`
@@ -97,6 +99,7 @@ const Context = styled.p`
   color: #000;
   text-align: left;
   line-height: 3vh;
+  font-size:2vmin;
 `;
 const Demo = () => (
   <NewWindow>
@@ -198,20 +201,22 @@ function Experience() {
         <SectionContainer>
           <a href="https://rpubs.com/Pewapplepie/FDM-FamaMB" target="_blank">
             <Context>
-              Analysis of Predicting Cross-Sectional stock returns with
+              • Analysis of Predicting Cross-Sectional stock returns with
               Fama-Macbeth regression: firm-marketcap, price-normalized
               accruals, the earnings-price ratio, and 1/price.
             </Context>
           </a>
         </SectionContainer>
         <SectionContainer>
-          <a href="https://rpubs.com/Pewapplepie/FDM-FamaMB" target="_blank">
+          <a href="https://rpubs.com/Pewapplepie/745815" target="_blank">
             <Context>
-              Analysis of Predicting Cross-Sectional stock returns with
-              Fama-Macbeth regression: firm-marketcap, price-normalized
-              accruals, the earnings-price ratio, and 1/price.
+              • Historical Financial Data Analysis, Earnings, Cash Flows &
+              Leverage Ratios
             </Context>
           </a>
+        </SectionContainer>
+        <SectionContainer>
+          <div style={{height:'20vh'}}></div>
         </SectionContainer>
       </ResumeContainer>
     </ExperienceContainer>

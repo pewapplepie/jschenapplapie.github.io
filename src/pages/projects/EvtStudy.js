@@ -1,12 +1,10 @@
-// import React, { Component } from "react";
+import React, { Component } from "react";
+import MarkdownRender from "../../function/MarkDownRender.js";
+import Cell from "../../assets/coursework/hw2_FDM.md";
+var cell = require("../../assets/coursework/hw2_FDM.md");
 
-// __html = require("../../assets/coursework/hw2_evtstudy_jeffrey_ans.html");
-// var htmlDoc = { __html: __html };
+function EvtStudy() {
+  return <MarkdownRender source={Cell.source.join("")} />;
+}
 
-// class EvtStudy extends Component() {
-//   render() {
-//     return <div dangerouslySetInnerHTML={htmlDoc} /> /* like this */;
-//   }
-// }
-
-// export default EvtStudy;
+export default EvtStudy;

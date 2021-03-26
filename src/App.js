@@ -1,7 +1,7 @@
 import { SocialIcon } from "react-social-icons";
 import Intro from "./pages/IntroPage.js";
 // import FAMAMB from "./pages/projects/FamaMB.js";
-//import EvtStudy from "./pages/projects/EvtStudy.js";
+import EvtStudy from "./pages/projects/EvtStudy.js";
 import IntroTrap from "./pages/IntroTrap.js";
 import Header from "./pages/Header.js";
 import Experience from "./pages/Experience.js";
@@ -25,6 +25,9 @@ function App() {
       <Switch>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="/projects-evtstudy">
+          <EvtStudy />
         </Route>
         <Route path="/">
           <Home />
