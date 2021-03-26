@@ -61,9 +61,9 @@ const Profile_Img = styled.img`
   transition: transform 500ms ease;
   :hover& {
     transform: scale(1.25);
+    touch-action: none;
+    --ms-touch-action: none;
   }
-  touch-action: none;
-  -ms-touch-action: none;
 `;
 const Content_Social = styled.div`
   display: flex;
@@ -119,7 +119,7 @@ const Intro_title2 = styled(Intro_title)``;
 
 const hyperstyle = {
   display: "inline-block",
-  color: "#202020",
+  color: "#374785",
   fontFamily: "Merriweather",
   fontWeight: "bold",
 };
