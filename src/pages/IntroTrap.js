@@ -55,7 +55,6 @@ const Profile_Pic_Container = styled.div`
   -ms-touch-action: none;
 `;
 const Profile_Img = styled.img`
-  position: relative;
   width: 100%;
   height: 100%;
   background-size: cover;
