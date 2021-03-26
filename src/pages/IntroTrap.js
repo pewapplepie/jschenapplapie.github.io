@@ -66,6 +66,8 @@ const Profile_Img = styled.img`
   :hover& {
     transform: scale(1.25);
   }
+  touch-action: none;
+  -ms-touch-action: none;
 `;
 const Content_Social = styled.div`
   display: flex;
