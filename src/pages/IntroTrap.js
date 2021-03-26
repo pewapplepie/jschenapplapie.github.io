@@ -51,8 +51,6 @@ const Profile_Pic_Container = styled.div`
   border-width: thick;
   border-color: #c0c0c0;
   border-style: solid;
-  touch-action: none;
-  -ms-touch-action: none;
 `;
 const Profile_Img = styled.img`
   width: 100%;
@@ -62,7 +60,7 @@ const Profile_Img = styled.img`
   :hover& {
     transform: scale(1.25);
     touch-action: none;
-    --ms-touch-action: none;
+    -ms-touch-action: none;
   }
 `;
 const Content_Social = styled.div`
