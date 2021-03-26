@@ -84,6 +84,11 @@ const Blink_wrapper = styled.div`
   animation: ${blinkingEffect} 1.1s linear infinite;
 `;
 
+const Blink_wrapper2 = styled(Blink_wrapper)`
+  padding-left: 0px;
+  animation: ${blinkingEffect} 2s linear infinite;
+`;
+
 const Content_Intro = styled.div`
   display: flex;
   height: 70%;
@@ -167,7 +172,9 @@ function IntroTrap() {
         </Content_top>
         <Content_Intro>
           <Intro_p1>
-            <Intro_title>My Bio ..</Intro_title>
+            <Intro_title>
+              My Bio <Blink_wrapper2>. .</Blink_wrapper2>
+            </Intro_title>
             I from a small city called Hsinchu, aka the Silicon Valley in
             Taiwan. (Home of Semiconductor eg TSMC <p />
             I'm currently a Master student at UCLA Anderson School of Management
