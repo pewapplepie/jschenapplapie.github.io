@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
-import myprofile_pic from "../assets/mypic.jpg";
 import { SocialIcon } from "react-social-icons";
+import myprofile_pic from "../assets/mypic.jpg";
 
 const TrapContainer = styled.div`
   position: relative;
@@ -32,6 +32,7 @@ const Content_top = styled.div`
   flex-direction: column;
   align-items: center;
   margin: auto;
+  overflow: hidden;
 `;
 const Content_h1 = styled.div`
   align-self: flex-start;
@@ -51,12 +52,17 @@ const Profile_Pic_Container = styled.div`
   border-width: thick;
   border-color: #c0c0c0;
   border-style: solid;
+  touch-action: none;
+  -ms-touch-action: none;
 `;
 const Profile_Img = styled.img`
+  display: block;
   width: 100%;
   height: 100%;
-  background-size: cover;
+  border-radius: 50%;
   transition: transform 500ms ease;
+  touch-action: none;
+  -ms-touch-action: none;
   :hover& {
     transform: scale(1.25);
     touch-action: none;
@@ -86,7 +92,7 @@ const Blink_wrapper = styled.div`
 
 const Blink_wrapper2 = styled(Blink_wrapper)`
   padding-left: 0px;
-  animation: ${blinkingEffect} 2s linear infinite;
+  animation: ${blinkingEffect} 2.5s linear infinite;
 `;
 
 const Content_Intro = styled.div`
@@ -186,7 +192,9 @@ function IntroTrap() {
             travel, and has visited over 20+ countries across four continents.
           </Intro_p1>
           <Intro_p2>
-            <Intro_title2>About .. </Intro_title2>
+            <Intro_title2>
+              About <Blink_wrapper2>. . .</Blink_wrapper2>
+            </Intro_title2>
             Jeffrey is a MFE candidate at UCLA Anderson School of Management.
             His course projects across different topics within empirical
             analysis, derivatives, fixed income, investment and financial
