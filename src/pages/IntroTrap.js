@@ -52,23 +52,26 @@ const Profile_Pic_Container = styled.div`
   border-width: thick;
   border-color: #c0c0c0;
   border-style: solid;
-  touch-action: none;
   -ms-touch-action: none;
+  touch-action: none;
 `;
+
 const Profile_Img = styled.img`
   display: block;
   width: 100%;
   height: 100%;
   border-radius: 50%;
   transition: transform 500ms ease;
-  touch-action: none;
   -ms-touch-action: none;
-  :hover& {
+  touch-action: none;
+  overflow: hidden;
+  ${Profile_Pic_Container}:hover & {
     transform: scale(1.25);
-    touch-action: none;
     -ms-touch-action: none;
+    touch-action: none;
   }
 `;
+
 const Content_Social = styled.div`
   display: flex;
   flex-direction: row;
@@ -179,7 +182,7 @@ function IntroTrap() {
         <Content_Intro>
           <Intro_p1>
             <Intro_title>
-              My Bio <Blink_wrapper2>. .</Blink_wrapper2>
+              My Bio <Blink_wrapper2>. . .</Blink_wrapper2>
             </Intro_title>
             I from a small city called Hsinchu, aka the Silicon Valley in
             Taiwan. (Home of Semiconductor eg TSMC <p />
