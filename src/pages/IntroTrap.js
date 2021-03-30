@@ -226,7 +226,7 @@ function IntroTrap() {
               <Blink_wrapper3>.</Blink_wrapper3>
             </Intro_title>
             I from a small city called Hsinchu, aka the Silicon Valley in
-            Taiwan. (Home of Semiconductor eg TSMC <p />
+            Taiwan. (Home of Semiconductor eg TSMC )<p />
             I'm currently a Master student at UCLA Anderson School of Management
             with a B.S. in Chemistry at NTU <p />
             My passion in quant finance is driven by my desire to combine
@@ -271,7 +271,7 @@ function IntroTrap() {
             for Prof. Hsu within the Analytical Chemistry area, specializing in
             Mass Spectrometry (MALDI) and Bioinformation data analysis.
             <p />
-            Jeffrey's experiences included AI-driven investment management
+            Jeffrey's experiences include AI-driven investment management
             firms, global leading hedge fund, academia science research, and the
             software industry.
           </Intro_p2>
