@@ -113,7 +113,12 @@ const Img = styled.img`
   background-size: cover;
   display: block;
 `;
-
+const PhotoBox = styled.img`
+  height: 90%;
+  width: 80%;
+  border-radius: 10px;
+  border: 2px solid #66ffb2;
+`;
 const ImgStyledBox = styled.div`
   width: 100%;
   height: 35vh;
@@ -121,13 +126,12 @@ const ImgStyledBox = styled.div`
   justify-content: flex-end;
   align-items: center;
   margin-top: 5px;
+  transition: transform 500ms ease;
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
-const PhotoBox = styled.img`
-  height: 90%;
-  width: 80%;
-  border-radius: 10px;
-  border: 2px solid #66ffb2;
-`;
+
 function Experience() {
   return (
     <ExperienceContainer>
@@ -214,8 +218,9 @@ function Experience() {
                 <strong>top 5 in Taiwan</strong>
                 <br />
               </Details>
+
               <ImgStyledBox>
-                <PhotoBox src={IQC_PHOTO}></PhotoBox>
+                <PhotoBox src={IQC_PHOTO} />
               </ImgStyledBox>
             </LeftBox>
             <div style={ArrowContainer}>
@@ -244,8 +249,20 @@ function Experience() {
                 market simulator platform in three cases, BP commodity,
                 liquidity and algorithm trading <br />
               </Details>
-              <ImgStyledBox style={{justifyContent:"flex-start"}}>
-                <PhotoBox src={RITC_TEAM}></PhotoBox>
+
+              <ImgStyledBox style={{ justifyContent: "flex-start" }}>
+                <a
+                  href="https://www.linkedin.com/posts/ucla-anderson-school-of-management_join-us-in-congratulating-ucla-andersons-activity-6773056734174040064-f1ib"
+                  target="_blank"
+                  style={{
+                    width: "auto",
+                    height: "auto",
+                    margin: 0,
+                    padding: 0,
+                  }}
+                >
+                  <PhotoBox src={RITC_TEAM}></PhotoBox>
+                </a>
               </ImgStyledBox>
             </RightBox>
           </RightContentBox>

@@ -63,14 +63,14 @@ const PhotoBlock = styled.div`
   width: 80%;
   height: auto;
   border-radius: 15px;
-  overflow:hidden;
+  overflow: hidden;
   transition: transform 1000ms ease;
-  &:hover{
-    transform:scale(1.15)
+  &:hover {
+    transform: scale(1.15);
   }
 
-  &:hover{
-    ${Img}{
+  &:hover {
+    ${Img} {
       transform: scale(1.2);
     }
   }
@@ -107,7 +107,7 @@ function Academis() {
   return (
     <AcademisContainer>
       <HeadingContainer>
-      <Heading>Education</Heading>
+        <Heading>Education</Heading>
       </HeadingContainer>
       <SepLine />
       <SectionContainer>
@@ -177,6 +177,16 @@ function Academis() {
               mining, Programming (Python), Using R for Data Analysis, Special
               Topic on Advanced Sobware Development (BlockChain ApplicaEon),
               Research Training for Junior
+              <br />
+              <br></br>
+              <b>
+                • Undergraduate Researcher: <br />- Rapid Identification of
+                Bacteria by Surfaced-assisted Laser Desorption Ionization Mass
+                Spectrometry using Gold Nanoparticle Arrays
+              </b>
+              <br />
+              Poster Presentation @ 15th TSMS Annual Conference & 7th World
+              Chinese Mass Spectrometry Conference
             </Context>
           </RightBlock>
         </DetailContainer>
@@ -203,7 +213,7 @@ function Academis() {
         </a>
       </SectionContainer>
       <SectionContainer>
-        <div style={{ height: "20vh" }}></div>
+        <div style={{ height: "20vh", textAlign:"center",marginTop:"10vh" }}>*More Projects will be added blow*</div>
       </SectionContainer>
     </AcademisContainer>
   );
