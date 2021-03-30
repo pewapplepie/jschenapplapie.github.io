@@ -43,6 +43,16 @@ const Content_h1 = styled.div`
   padding-left: 3vh;
 `;
 
+const Profile_Img = styled.img`
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: transform 500ms ease;
+  -ms-touch-action: none;
+  touch-action: none;
+`;
+
 const Profile_Pic_Container = styled.div`
   position: relative;
   width: 25vh;
@@ -54,21 +64,16 @@ const Profile_Pic_Container = styled.div`
   border-style: solid;
   -ms-touch-action: none;
   touch-action: none;
-`;
-
-const Profile_Img = styled.img`
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
   transition: transform 500ms ease;
-  -ms-touch-action: none;
-  touch-action: none;
-  overflow: hidden;
-  ${Profile_Pic_Container}:hover & {
-    transform: scale(1.25);
-    -ms-touch-action: none;
-    touch-action: none;
+  &:hover {
+    border-color: #99ffff;
+  }
+  &:hover {
+    ${Profile_Img} {
+      transform: scale(1.25);
+      -ms-touch-action: none;
+      touch-action: none;
+    }
   }
 `;
 
@@ -77,6 +82,15 @@ const Content_Social = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   width: 30%;
+`;
+
+const IconBox = styled.div`
+  width: auto;
+  height: auto;
+  transition: transform 500ms ease;
+  &:hover {
+    transform: scale(1.15);
+  }
 `;
 
 const Content_Motto = styled.div`
@@ -90,12 +104,17 @@ const Content_Motto = styled.div`
 const Blink_wrapper = styled.div`
   display: inline-block;
   padding-left: 10px;
-  animation: ${blinkingEffect} 1.1s linear infinite;
+  animation: ${blinkingEffect} 1.5s linear infinite;
 `;
 
-const Blink_wrapper2 = styled(Blink_wrapper)`
+const Blink_wrapper2 = styled.div`
+  display: inline-block;
+  padding-left: 10px;
+  animation: ${blinkingEffect2} 2s linear infinite;
+`;
+const Blink_wrapper3 = styled(Blink_wrapper2)`
   padding-left: 0px;
-  animation: ${blinkingEffect} 2.5s linear infinite;
+  animation-delay: .5s;
 `;
 
 const Content_Intro = styled.div`
@@ -144,6 +163,20 @@ function blinkingEffect() {
     `;
 }
 
+function blinkingEffect2() {
+  return keyframes`
+      0% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    `;
+}
+
 function IntroTrap() {
   return (
     <TrapContainer>
@@ -168,11 +201,18 @@ function IntroTrap() {
           </Profile_Pic_Container>
 
           <Content_Social>
-            <SocialIcon
-              url="https://www.linkedin.com/in/jeffrey-chen-537155173/"
-              target="_blank"
-            />
-            <SocialIcon url="https://github.com/pewapplepie" target="_blank" />
+            <IconBox>
+              <SocialIcon
+                url="https://www.linkedin.com/in/jeffrey-chen-537155173/"
+                target="_blank"
+              />
+            </IconBox>
+            <IconBox>
+              <SocialIcon
+                url="https://github.com/pewapplepie"
+                target="_blank"
+              />
+            </IconBox>
           </Content_Social>
           <Content_Motto>
             I love Finance & Programming
@@ -182,7 +222,8 @@ function IntroTrap() {
         <Content_Intro>
           <Intro_p1>
             <Intro_title>
-              My Bio <Blink_wrapper2>. . .</Blink_wrapper2>
+              My Bio <Blink_wrapper2>. </Blink_wrapper2>{" "}
+              <Blink_wrapper3>.</Blink_wrapper3>
             </Intro_title>
             I from a small city called Hsinchu, aka the Silicon Valley in
             Taiwan. (Home of Semiconductor eg TSMC <p />
@@ -196,7 +237,8 @@ function IntroTrap() {
           </Intro_p1>
           <Intro_p2>
             <Intro_title2>
-              About <Blink_wrapper2>. . .</Blink_wrapper2>
+              About <Blink_wrapper2>. </Blink_wrapper2>{" "}
+              <Blink_wrapper3> .</Blink_wrapper3>
             </Intro_title2>
             Jeffrey is a MFE candidate at UCLA Anderson School of Management.
             His course projects across different topics within empirical

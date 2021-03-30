@@ -48,22 +48,33 @@ const RightBlock = styled.div`
   flex: 6;
   height: auto;
 `;
-const PhotoBlock = styled.div`
-  width: 80%;
-  height: auto;
-  border-radius: 15%;
-  //overflow:hidden;
-`;
+
 const Img = styled.img`
   width: 100%;
   height: 100%;
   background-size: cover;
   transition: transform 500ms ease;
+  /* 
   :hover& {
     transform: scale(1.15);
+  } */
+`;
+const PhotoBlock = styled.div`
+  width: 80%;
+  height: auto;
+  border-radius: 15px;
+  overflow:hidden;
+  transition: transform 1000ms ease;
+  &:hover{
+    transform:scale(1.15)
+  }
+
+  &:hover{
+    ${Img}{
+      transform: scale(1.2);
+    }
   }
 `;
-
 const Title = styled.h3`
   font-family: Merriweather;
   letter-spacing: 2px;
@@ -84,10 +95,21 @@ const Context = styled.p`
   line-height: 3vh;
   font-size: 2vmin;
 `;
-
+const SepLine = styled.div`
+  width: 90%;
+  height: 0.3mm;
+  background-color: #374785;
+  margin: auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+`;
 function Academis() {
   return (
     <AcademisContainer>
+      <HeadingContainer>
+      <Heading>Education</Heading>
+      </HeadingContainer>
+      <SepLine />
       <SectionContainer>
         <DetailContainer>
           <LeftBlock>
@@ -162,6 +184,7 @@ function Academis() {
       <HeadingContainer>
         <Heading>Projects</Heading>
       </HeadingContainer>
+      <SepLine />
       <SectionContainer>
         <a href="https://rpubs.com/Pewapplepie/FDM-FamaMB" target="_blank">
           <Context>

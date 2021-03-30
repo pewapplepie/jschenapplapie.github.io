@@ -1,6 +1,12 @@
 import styled, { keyframes } from "styled-components";
 import ArrowAnim from "./components/ArrowsLines.js";
 import { Link } from "react-router-dom";
+import RITC_LOGO from "../assets/images/ritc-logo-removebg.png";
+import RITC_TEAM from "../assets/images/ritc_team.jpeg";
+import CITADEL_LOGO from "../assets/images/citadel-logo.png";
+import WQ_IQC_LOGO from "../assets/images/WQ_IQC_Logo.jpeg";
+import IQC_PHOTO from "../assets/images/IMG_7057.PNG";
+import WQ_BANNER from "../assets/images/WorldQuant-Logo-removebg-preview.png";
 const ExperienceContainer = styled.div`
   width: 100%;
 `;
@@ -36,7 +42,7 @@ const SepLine = styled.div`
 
 const JourneyContainer = styled.div`
   display: flex;
-  height: 100em;
+  height: 105em;
   width: 100%;
   flex-direction: row;
   justify-content: center;
@@ -68,6 +74,8 @@ const LeftBox = styled.div`
   height: auto;
   padding-right: 5%;
   text-align: right;
+  display: flex;
+  flex-direction: column;
 `;
 const RightBox = styled(LeftBox)`
   padding-left: 5%;
@@ -99,6 +107,27 @@ const ArrowContainer = {
   flex: 2,
   height: "auto",
 };
+const Img = styled.img`
+  width: 25%;
+  height: 20%;
+  background-size: cover;
+  display: block;
+`;
+
+const ImgStyledBox = styled.div`
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 5px;
+`;
+const PhotoBox = styled.img`
+  height: 90%;
+  width: 80%;
+  border-radius: 10px;
+  border: 2px solid #66ffb2;
+`;
 function Experience() {
   return (
     <ExperienceContainer>
@@ -114,16 +143,17 @@ function Experience() {
         <LeftContainer>
           <LeftContentBox>
             <LeftBox>
+              <Img style={{ alignSelf: "flex-end" }} src={CITADEL_LOGO}></Img>
               <Title
                 href="https://github.com/styled-components/styled-components"
                 target="_blank"
               >
-                <h1 style={{ display: "inline" }}>Terminal</h1>/ West Coast
+                <h3 style={{ display: "inline" }}>Terminal</h3>/ West Coast
                 Regional{" "}
               </Title>
               <TimeWindow>March 29th - April 5th</TimeWindow>
               <Details>
-                Competing in a Algo dota games hosted by{" "}
+                Selected to compete in a AI e-sports tournament hosted by{" "}
                 <strong>Correlation 1 & Citadel</strong>. Developing algo
                 strategy to defeat the opponents
               </Details>
@@ -132,26 +162,121 @@ function Experience() {
               <ArrowAnim rotate={true}></ArrowAnim>
             </div>
           </LeftContentBox>
+          <LeftContentBox />
+          <LeftContentBox>
+            <LeftBox>
+              <Title>
+                <h3 style={{ margin: 0 }}>Quantitative Analyst Intern</h3>
+                <a
+                  href="https://www.rosetta-analytics.com/"
+                  target="_blank"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  @ Rosetta Analytics
+                </a>
+              </Title>
+              <TimeWindow>Novenber 2020 - January 2021</TimeWindow>
+              <Details>
+                Collaborated with the senior quant researcher to develop
+                different portfolios, built various back-testing functions to
+                validate different alpha models, and devise algorithms for
+                processing over 200M+ of financial data
+                <br />
+              </Details>
+            </LeftBox>
+            <div style={ArrowContainer}>
+              <ArrowAnim rotate={true}></ArrowAnim>
+            </div>
+          </LeftContentBox>
+          <LeftContentBox />
+          <LeftContentBox>
+            <LeftBox>
+              <Img style={{ alignSelf: "flex-end" }} src={WQ_BANNER}></Img>
+              <Title>
+                <h3 style={{ margin: 0 }}>Research Consultant</h3> @ WorldQuant
+                LLC
+              </Title>
+              <TimeWindow>August 2019 - October 2020</TimeWindow>
+              <Details>
+                Optimized and improved different alpha strategies. Analyzed
+                trading data across various asset classes and researched
+                trending strategies during quant trainning session with senior
+                qunat researcher
+              </Details>
+              <Title style={{ marginTop: "10px" }}>
+                <h3 style={{ display: "inline" }}>IQC</h3> International Quant
+                Championship
+              </Title>
+              <TimeWindow>March 29th - April 5th</TimeWindow>
+              <Details>
+                Led a team to compete and designed various trading strategy and
+                Alpha-models with Python, finishing{" "}
+                <strong>top 5 in Taiwan</strong>
+                <br />
+              </Details>
+              <ImgStyledBox>
+                <PhotoBox src={IQC_PHOTO}></PhotoBox>
+              </ImgStyledBox>
+            </LeftBox>
+            <div style={ArrowContainer}>
+              <ArrowAnim rotate={true}></ArrowAnim>
+            </div>
+          </LeftContentBox>
         </LeftContainer>
         <SepLineVer></SepLineVer>
         <RightContainer>
-          <RightContentBox></RightContentBox>
+          <RightContentBox />
           <RightContentBox>
             <div style={ArrowContainer}>
               <ArrowAnim rotate={false}></ArrowAnim>
             </div>
             <RightBox>
-              <Title
-                href="https://ritc.rotman.utoronto.ca/"
-                target="_blank"
-              >
-                <h1 style={{ display: "inline" }}>Rotman</h1> Internatinal Trading Competeting
+              <Img src={RITC_LOGO}></Img>
+              <Title href="https://ritc.rotman.utoronto.ca/" target="_blank">
+                <h3 style={{ display: "inline" }}>Rotman</h3> Internatinal
+                Trading Competeting
               </Title>
               <TimeWindow> February 19th, 2021</TimeWindow>
               <Details>
-                UCLA Anderson School Team Trader<br/>
-                Perform trading around the Rotman Interactive Trader (RIT) market simulator platform in three cases, BP commodity, liquidity and algorithm trading. <br/>
-               
+                UCLA Anderson School Team Trader
+                <br />
+                Perform trading around the Rotman Interactive Trader (RIT)
+                market simulator platform in three cases, BP commodity,
+                liquidity and algorithm trading <br />
+              </Details>
+              <ImgStyledBox style={{justifyContent:"flex-start"}}>
+                <PhotoBox src={RITC_TEAM}></PhotoBox>
+              </ImgStyledBox>
+            </RightBox>
+          </RightContentBox>
+          <RightContentBox />
+          <RightContentBox>
+            <div style={ArrowContainer}>
+              <ArrowAnim rotate={false}></ArrowAnim>
+            </div>
+            <RightBox>
+              <Title>
+                <h3 style={{ margin: 0 }}>Software Engineer</h3> @
+                DragonCloud.ai
+              </Title>
+              <TimeWindow> April 2020 - July 2020</TimeWindow>
+              <Details>
+                Formulated Chatbot infrastructure of an AI-enabled English
+                learning platform with AWS Lambda, Python and React-Native
+              </Details>
+              <Title
+                style={{ marginTop: "5%" }}
+                href="https://www.aptan.io/#/"
+                target="_blank"
+              >
+                @ Aptan Inc
+              </Title>
+              <TimeWindow> Novenber 2019 - June 2020</TimeWindow>
+              <Details>
+                Constructed fin-tech platform incoorperated an HD Wallet
+                (Hierarchical Deterministic), BIP 32 (Bitcoin Improvement
+                Proposals) procedure, smart contract and token economy to
+                established a cryptocurrency payment
               </Details>
             </RightBox>
           </RightContentBox>
