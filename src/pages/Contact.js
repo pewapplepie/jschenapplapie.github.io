@@ -77,8 +77,8 @@ function Contact() {
       <PersonalInfoContainer>
         <PersonalInfo>
           <h2 style={{ textAlign: "center" }}>
-            Desire to combine advanced Quantitative technique with in-depth
-            financail knowledge to creat impact
+            Let me add values to your firm with quantitative methods, a
+            data-driven approach, and engineer mindsets.
           </h2>
         </PersonalInfo>
         <a

@@ -24,7 +24,7 @@ const Contents = styled.div`
   flex-direction: column;
   padding-top: 5%;
 `;
-const Content_top = styled.div`
+const Content_Top = styled.div`
   display: flex;
   width: 100%;
   height: 30%;
@@ -32,7 +32,7 @@ const Content_top = styled.div`
   flex-direction: column;
   align-items: center;
   margin: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 `;
 const Content_h1 = styled.div`
   align-self: flex-start;
@@ -44,17 +44,16 @@ const Content_h1 = styled.div`
 `;
 
 const Profile_Img = styled.img`
-  display: block;
+  /* display: block; */
   width: 100%;
   height: 100%;
   border-radius: 50%;
   transition: transform 500ms ease;
-  -ms-touch-action: none;
-  touch-action: none;
+  background-size: cover;
 `;
 
 const Profile_Pic_Container = styled.div`
-  position: relative;
+  /* position: relative; */
   width: 25vh;
   height: 25vh;
   border-radius: 50%;
@@ -114,7 +113,7 @@ const Blink_wrapper2 = styled.div`
 `;
 const Blink_wrapper3 = styled(Blink_wrapper2)`
   padding-left: 0px;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 `;
 
 const Content_Intro = styled.div`
@@ -191,7 +190,7 @@ function IntroTrap() {
         <polygon points="0,5, 100,0 100,100 0,90"></polygon>
       </svg>
       <Contents>
-        <Content_top>
+        <Content_Top>
           <Content_h1>
             Hi, I'm <b>Jer-Shen Chen</b>, aka <b>Jeffrey.</b>
           </Content_h1>
@@ -218,7 +217,7 @@ function IntroTrap() {
             I love Finance & Programming
             <Blink_wrapper> _ </Blink_wrapper>
           </Content_Motto>
-        </Content_top>
+        </Content_Top>
         <Content_Intro>
           <Intro_p1>
             <Intro_title>
@@ -271,8 +270,8 @@ function IntroTrap() {
             for Prof. Hsu within the Analytical Chemistry area, specializing in
             Mass Spectrometry (MALDI) and Bioinformation data analysis.
             <p />
-            Jeffrey's experiences include AI-driven investment management
-            firms, global leading hedge fund, academia science research, and the
+            Jeffrey's experiences include AI-driven investment management firms,
+            global leading hedge fund, academia science research, and the
             software industry.
           </Intro_p2>
         </Content_Intro>

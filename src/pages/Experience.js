@@ -98,6 +98,7 @@ const TimeWindow = styled.div`
   letter-spacing: 2px;
   color: #000;
   font-size: 2vmin;
+  margin-top: 3%;
 `;
 const Details = styled(TimeWindow)`
   margin-top: 3%;
@@ -138,8 +139,8 @@ function Experience() {
       <HeadingContainer>
         <Heading>Experience</Heading>
         <SubHeading>
-          “Protons give an atom its identity, electrons its personality.” <br />
-          - Bill Bryson, A short history of nearly everything
+          “Without a GOAL, you can't SCORE”
+          <br />
         </SubHeading>
       </HeadingContainer>
       <SepLine></SepLine>
@@ -152,14 +153,22 @@ function Experience() {
                 href="https://github.com/styled-components/styled-components"
                 target="_blank"
               >
-                <h3 style={{ display: "inline" }}>Terminal</h3>/ West Coast
-                Regional{" "}
+                <h3 style={{ display: "inline" }}>Final 8@ Terminal</h3>
+                <br />
+                / West Coast Regional <br />
               </Title>
-              <TimeWindow>March 29th - April 5th</TimeWindow>
+
+              <TimeWindow>
+                Team: Caffinated
+                <br />
+                Rewards: 1000$
+                <br />
+                March 29th - April 5th
+              </TimeWindow>
               <Details>
                 Selected to compete in a AI e-sports tournament hosted by{" "}
                 <strong>Correlation 1 & Citadel</strong>. Developing algo
-                strategy to defeat the opponents
+                strategy in python to defeat the opponents
               </Details>
             </LeftBox>
             <div style={ArrowContainer}>
@@ -208,8 +217,8 @@ function Experience() {
                 qunat researcher
               </Details>
               <Title style={{ marginTop: "10px" }}>
-                <h3 style={{ display: "inline" }}>IQC</h3> International Quant
-                Championship
+                <h3 style={{ display: "inline" }}>TOP 5 @ IQC</h3>
+                <br /> / Taiwan Regional
               </Title>
               <TimeWindow>March 29th - April 5th</TimeWindow>
               <Details>
