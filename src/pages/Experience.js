@@ -7,6 +7,8 @@ import CITADEL_LOGO from "../assets/images/citadel-logo.png";
 import WQ_IQC_LOGO from "../assets/images/WQ_IQC_Logo.jpeg";
 import IQC_PHOTO from "../assets/images/IMG_7057.PNG";
 import WQ_BANNER from "../assets/images/WorldQuant-Logo-removebg-preview.png";
+import CBOE_IMG from "../assets/images/Cboe_Global_Markets_Logo.png"
+
 const ExperienceContainer = styled.div`
   width: 100%;
 `;
@@ -130,7 +132,8 @@ const ImgStyledBox = styled.div`
   transition: transform 500ms ease;
   &:hover {
     transform: scale(1.1);
-  }
+  };
+  margin-bottom: 5px;
 `;
 
 function Experience() {
@@ -145,7 +148,9 @@ function Experience() {
       </HeadingContainer>
       <SepLine></SepLine>
       <JourneyContainer>
+        {/* Left Experience Container */}
         <LeftContainer>
+          <LeftContentBox />
           <LeftContentBox>
             <LeftBox>
               <Img style={{ alignSelf: "flex-end" }} src={CITADEL_LOGO}></Img>
@@ -237,8 +242,28 @@ function Experience() {
             </div>
           </LeftContentBox>
         </LeftContainer>
+        
         <SepLineVer></SepLineVer>
+        {/* Right Experience Container */}
         <RightContainer>
+          <RightContentBox >
+            {/* <div style={{backgroundColor:"green", width:"100%", height:"100%"}}></div> */}
+            <div style={ArrowContainer}>
+              <ArrowAnim rotate={false}></ArrowAnim>
+            </div>
+            <RightBox>
+              <Img src={CBOE_IMG}></Img>
+              <Title target="_blank">
+                <h3 style={{ margin:0}}>Derivative Strats Intern</h3>  @ Cboe Global Market
+              </Title>
+              <TimeWindow> June 21th 2021 - Present</TimeWindow>
+              <Details>
+              Using machine learning models tools to support new products, index calculations, and various VIX derivatives analyses.
+               
+              </Details>
+
+            </RightBox>
+          </RightContentBox>
           <RightContentBox />
           <RightContentBox>
             <div style={ArrowContainer}>
@@ -247,10 +272,10 @@ function Experience() {
             <RightBox>
               <Img src={RITC_LOGO}></Img>
               <Title href="https://ritc.rotman.utoronto.ca/" target="_blank">
-                <h3 style={{ display: "inline" }}>Rotman</h3> Internatinal
+                <h3 style={{ display: "inline", margin:0}}>Rotman</h3> Internatinal
                 Trading Competeting
               </Title>
-              <TimeWindow> February 19th, 2021</TimeWindow>
+              <TimeWindow> February 19th 2021</TimeWindow>
               <Details>
                 UCLA Anderson School Team Trader
                 <br />
@@ -268,8 +293,7 @@ function Experience() {
                     height: "auto",
                     margin: 0,
                     padding: 0,
-                  }}
-                >
+                  }}>
                   <PhotoBox src={RITC_TEAM}></PhotoBox>
                 </a>
               </ImgStyledBox>

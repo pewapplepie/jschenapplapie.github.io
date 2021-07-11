@@ -126,7 +126,14 @@ function Academis() {
           </LeftBlock>
           <RightBlock>
             <Context>
-              <b>• Econometrics (R):</b> Simple Linear Regression, Multiple
+            <b>• Officer of Career Development </b> 
+            <br/>
+            <b>• Coursework:</b> Machine Learning & Data Analytics, Quant Asset Management, Computational Finance, Stochastic Calculus, Fixed Income, Derivatives Markets, Empirical Methods in Finance, Econometrics, Investments, Risk Measurement and Management, Financial Decision Making (Corporate Finance), Financial Accounting
+            <br/>
+            <b>• Skills:</b>
+            Regression Analysis, Time-Series Forecasting, Statistical Modeling, Mathematics, Clustering, Exploratory Analysis, Machine Learning, Deep Learning, Big Data, Stochastic Calculus, PDE, Monte Carlo Simulation
+
+              {/* <b>• Econometrics (R):</b> Simple Linear Regression, Multiple
               Linear Regression, Prediction in a Multiple Regression Model,
               Lasso Regression, Ridge Regression, Elastic-Net Regression, CART
               Regression <p />
@@ -157,7 +164,7 @@ function Academis() {
               Applications, Financial Statements, Comparables, Perfect Capital
               Structure, Capital Structure, Perfect, Taxes (WACC), Perfect
               Capital Structure, Brief Taxes (Clienteles)
-              <br />
+              <br /> */}
             </Context>
           </RightBlock>
         </DetailContainer>

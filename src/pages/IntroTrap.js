@@ -192,7 +192,7 @@ function IntroTrap() {
       <Contents>
         <Content_Top>
           <Content_h1>
-            Hi, I'm <b>Jer-Shen Chen</b>, aka <b>Jeffrey.</b>
+            Hi, I'm <b>Jeffrey</b>
           </Content_h1>
 
           <Profile_Pic_Container>
@@ -214,37 +214,45 @@ function IntroTrap() {
             </IconBox>
           </Content_Social>
           <Content_Motto>
-            I love Finance & Programming
+            a Financial Engineer & a Programmer
             <Blink_wrapper> _ </Blink_wrapper>
           </Content_Motto>
         </Content_Top>
         <Content_Intro>
           <Intro_p1>
             <Intro_title>
-              My Bio <Blink_wrapper2>. </Blink_wrapper2>{" "}
+              Fact about me and personality <Blink_wrapper2>. </Blink_wrapper2>{" "}
               <Blink_wrapper3>.</Blink_wrapper3>
             </Intro_title>
-            I from a small city called Hsinchu, aka the Silicon Valley in
-            Taiwan. (Home of Semiconductor eg TSMC )<p />
+            <br/>
+            I from Hsinchu City, Taiwan. <br/>
+            Also know as Silicon Valley in
+            Taiwan/ Home of Semiconductor <p/>
             I'm currently a Master student at UCLA Anderson School of Management
-            with a B.S. in Chemistry at NTU <p />
+            with a B.S. in Chemistry at National Taiwan University <p />
             My passion in quant finance is driven by my desire to combine
             financial knowledge with in-depth data analysis and machine learning
             technique to surface impactful insight and facilitate sound-making
-            decisions among various business strategies <p />I also enjoys world
-            travel, and has visited over 20+ countries across four continents.
+            decisions among various business strategies <p />I also enjoys
+            traveling, and already visited over 20+ countries across four continents. <p/>
+            I'm adventurous and constantly want to learn new thing <p/>
+            I'll prolly start doing youtube as well xD plz follow me then
+
           </Intro_p1>
           <Intro_p2>
             <Intro_title2>
-              About <Blink_wrapper2>. </Blink_wrapper2>{" "}
+              Formal Introduction <Blink_wrapper2>. </Blink_wrapper2>{" "}
               <Blink_wrapper3> .</Blink_wrapper3>
             </Intro_title2>
-            Jeffrey is a MFE candidate at UCLA Anderson School of Management.
-            His course projects across different topics within empirical
+            <br/>
+            Jeffrey is a MFE candidate at UCLA Anderson School of Management, class of 2021.<br/>
+            
+            His course projects across different topics within machine learning, quantitative assets management, empirical
             analysis, derivatives, fixed income, investment and financial
             decision making.
             <p />
-            Previously, Jeffrey was an Quantitative Analyst Intern at{" "}
+            Jeffrey currently Intern at DStrats Team @ Cboe Global Market < br/>
+            Prior to Cboe, Jeffrey was an Quantitative Analyst Intern at{" "}
             <a
               style={hyperstyle}
               href="https://www.rosetta-analytics.com/"
@@ -258,7 +266,7 @@ function IntroTrap() {
             Over the year of 2019, Jeffrey competed in International Quant
             Championship hosted by the WorldQuant LLC and made into natioanl top
             5. <p />
-            Prior to entering Finance, Jeffrey worked as an Undergraduate
+            Before Finance, Jeffrey studied Chemistry and worked as an Undergraduate
             Researcher under{""}
             <a
               href="https://cchlabblog.wordpress.com/"
