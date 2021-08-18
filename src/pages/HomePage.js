@@ -6,26 +6,22 @@ import Experience from "./Experience.js";
 import Contact from "./Contact.js";
 import Academis from "./Academic.js";
 import Footer from "./Footer";
+import React, { useRef } from "react";
 const AppDiv = styled.div`
   background-color: #f7f4e8; //#FAF4DD;//#E3E2DF;
   display: flex;
   flex-direction: column;
 `;
-
-const SectionBar = styled.div`
-  display: block;
-  position: absolute;
-  background-color: green;
-  height: 30vh;
-  width: 20vh;
-`;
 function HomePage(params) {
+  const experience = useRef()
+  const academic = useRef()
+  const scrolltoDiv = (ref) => ref.current.scrollIntoView({block:'end',behavior:'smooth'})//window.scrollTo(0, ref.current.offsetTop)
   return (
     <AppDiv>
       <Header></Header>
       <IntroTrap />
-      <Experience></Experience>
-      <Academis></Academis>
+      <Experience reference={experience} click={()=>scrolltoDiv(academic)}></Experience>
+      <Academis reference={academic}></Academis>
       <Contact></Contact>
       <Footer></Footer>
     </AppDiv>

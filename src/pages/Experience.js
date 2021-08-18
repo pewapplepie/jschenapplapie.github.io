@@ -9,10 +9,9 @@ import IQC_PHOTO from "../assets/images/IMG_7057.PNG";
 import WQ_BANNER from "../assets/images/WorldQuant-Logo-removebg-preview.png";
 import CBOE_IMG from "../assets/images/Cboe_Global_Markets_Logo.png";
 
-
 const ExperienceContainer = styled.div`
   width: 100%;
-  margin-bottom:15%;
+  margin-bottom: 15%;
 `;
 const HeadingContainer = styled.div`
   align-self: center;
@@ -138,11 +137,9 @@ const ImgStyledBox = styled.div`
   margin-bottom: 5px;
 `;
 
-
-
-function Experience() {
+function Experience({ reference, click }) {
   return (
-    <ExperienceContainer>
+    <ExperienceContainer ref={reference}>
       <HeadingContainer>
         <Heading>Experience</Heading>
         <SubHeading>
@@ -274,14 +271,17 @@ function Experience() {
               <ArrowAnim rotate={false}></ArrowAnim>
             </div>
             <RightBox>
-              <Img src={DATAOPEN_LOGO}></Img>
+              <Img src={CITADEL_LOGO}></Img>
               <Title
                 href="https://www.citadel.com/careers/the-data-open/"
                 target="_blank"
               >
-                <h3 style={{ display: "inline" }}>3rd Place @ Citadel Datathon</h3>
+                <h3 style={{ display: "inline" }}>
+                  3rd Place @ Citadel Datathon
+                </h3>
                 <br />
-                Summer Invitational Datathon 2021<br />
+                Summer Invitational Datathon 2021
+                <br />
               </Title>
 
               <TimeWindow>
@@ -289,10 +289,18 @@ function Experience() {
                 <br />
                 July 12th - July 19th
               </TimeWindow>
-              <Details>
-                Selected to compete in the biggest Datathon event of the year, hosted by{" "}
-                <strong>Correlation 1 & Citadel</strong>. Created an improved review rating system for Airbnb listings using Machine Learning and Natural Language Processing techniques. <br/>
-                Created sentiment indicator using LDA and incorporated with supervised model techniques including RandomForest, XGBoost, SVM and multi-linear regression
+              {/* <button >click to see paper</button> */}
+              <Details onClick={click}>
+                Selected to compete in the biggest Datathon event of the year,
+                hosted by <strong>Correlation 1 & Citadel</strong>. Created an
+                improved review rating system for Airbnb listings using Machine
+                Learning and Natural Language Processing techniques. <br />
+                Created sentiment indicator using LDA and incorporated with
+                supervised model techniques including RandomForest, XGBoost, SVM
+                and multi-linear regression
+                <br/>
+                *** click to scroll to paper below***
+                <br/>
               </Details>
             </RightBox>
           </RightContentBox>

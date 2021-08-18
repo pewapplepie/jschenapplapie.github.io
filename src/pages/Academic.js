@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 import NewWindow from "react-new-window";
 import UCLA_IMG from "../assets/UCLA-Anderson-School-1440x960.jpeg";
 import NTU_IMG from "../assets/NTU-campus.jpeg";
-import DatathonPaper from "../assets/pdfs/Data_Open_Report_2021.pdf"
+import DatathonPaper from "../assets/pdfs/Data_Open_Report_2021.pdf";
 const HeadingContainer = styled.div`
   align-self: center;
   width: auto;
@@ -105,12 +105,10 @@ const SepLine = styled.div`
   margin-bottom: 10vh;
 `;
 
-const onPdfClick = (pdf) => {
-  window.open(pdf)
-}
-function Academis() {
+
+function Academis({ reference }) {
   return (
-    <AcademisContainer>
+    <AcademisContainer ref={reference}>
       <HeadingContainer>
         <Heading>Education</Heading>
       </HeadingContainer>
@@ -131,13 +129,20 @@ function Academis() {
           </LeftBlock>
           <RightBlock>
             <Context>
-            <b>• Officer of Career Development </b> 
-            <br/>
-            <b>• Coursework:</b> Machine Learning & Data Analytics, Quant Asset Management, Computational Finance, Stochastic Calculus, Fixed Income, Derivatives Markets, Empirical Methods in Finance, Econometrics, Investments, Risk Measurement and Management, Financial Decision Making (Corporate Finance), Financial Accounting
-            <br/>
-            <b>• Skills:</b>
-            Regression Analysis, Time-Series Forecasting, Statistical Modeling, Mathematics, Clustering, Exploratory Analysis, Machine Learning, Deep Learning, Big Data, Stochastic Calculus, PDE, Monte Carlo Simulation
-
+              <b>• Officer of Career Development </b>
+              <br />
+              <b>• Coursework:</b> Machine Learning & Data Analytics, Quant
+              Asset Management, Computational Finance, Stochastic Calculus,
+              Fixed Income, Derivatives Markets, Empirical Methods in Finance,
+              Econometrics, Investments, Risk Measurement and Management,
+              Financial Decision Making (Corporate Finance), Financial
+              Accounting
+              <br />
+              <b>• Skills:</b>
+              Regression Analysis, Time-Series Forecasting, Statistical
+              Modeling, Mathematics, Clustering, Exploratory Analysis, Machine
+              Learning, Deep Learning, Big Data, Stochastic Calculus, PDE, Monte
+              Carlo Simulation
               {/* <b>• Econometrics (R):</b> Simple Linear Regression, Multiple
               Linear Regression, Prediction in a Multiple Regression Model,
               Lasso Regression, Ridge Regression, Elastic-Net Regression, CART
@@ -207,14 +212,17 @@ function Academis() {
         <Heading>Projects</Heading>
       </HeadingContainer>
       <SepLine />
-      <SectionContainer>
+      <SectionContainer style={{marginBottom:'3%'}}>
+        <Title>The DataOpen 2021:</Title>
         <a href={DatathonPaper} target="_blank">
           <Context>
-            • Datathon
+            • Better Reflection of Airbnb User Experience than Rating Engine via
+            Machine Learning and Natural Language Processing
           </Context>
         </a>
       </SectionContainer>
       <SectionContainer>
+        <Title>Class: Financial Decision Making:</Title>
         <a href="https://rpubs.com/Pewapplepie/FDM-FamaMB" target="_blank">
           <Context>
             • Analysis of Predicting Cross-Sectional stock returns with
@@ -222,8 +230,7 @@ function Academis() {
             the earnings-price ratio, and 1/price.
           </Context>
         </a>
-      </SectionContainer>
-      <SectionContainer>
+
         <a href="https://rpubs.com/Pewapplepie/745815" target="_blank">
           <Context>
             • Historical Financial Data Analysis, Earnings, Cash Flows &
@@ -232,7 +239,9 @@ function Academis() {
         </a>
       </SectionContainer>
       <SectionContainer>
-        <div style={{ height: "20vh", textAlign:"center",marginTop:"10vh" }}>*More Projects will be added blow*</div>
+        <div style={{ height: "20vh", textAlign: "center", marginTop: "10vh" }}>
+          *More Projects will be added blow*
+        </div>
       </SectionContainer>
     </AcademisContainer>
   );
