@@ -2,6 +2,7 @@ import styled, { keyframes } from "styled-components";
 import NewWindow from "react-new-window";
 import UCLA_IMG from "../assets/UCLA-Anderson-School-1440x960.jpeg";
 import NTU_IMG from "../assets/NTU-campus.jpeg";
+import DatathonPaper from "../assets/pdfs/Data_Open_Report_2021.pdf"
 const HeadingContainer = styled.div`
   align-self: center;
   width: auto;
@@ -103,6 +104,10 @@ const SepLine = styled.div`
   margin-top: 10vh;
   margin-bottom: 10vh;
 `;
+
+const onPdfClick = (pdf) => {
+  window.open(pdf)
+}
 function Academis() {
   return (
     <AcademisContainer>
@@ -202,6 +207,13 @@ function Academis() {
         <Heading>Projects</Heading>
       </HeadingContainer>
       <SepLine />
+      <SectionContainer>
+        <a href={DatathonPaper} target="_blank">
+          <Context>
+            • Datathon
+          </Context>
+        </a>
+      </SectionContainer>
       <SectionContainer>
         <a href="https://rpubs.com/Pewapplepie/FDM-FamaMB" target="_blank">
           <Context>

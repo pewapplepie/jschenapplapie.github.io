@@ -4,13 +4,15 @@ import { Link } from "react-router-dom";
 import RITC_LOGO from "../assets/images/ritc-logo-removebg.png";
 import RITC_TEAM from "../assets/images/ritc_team.jpeg";
 import CITADEL_LOGO from "../assets/images/citadel-logo.png";
-import WQ_IQC_LOGO from "../assets/images/WQ_IQC_Logo.jpeg";
+import DATAOPEN_LOGO from "../assets/images/data-open-logo.jpeg";
 import IQC_PHOTO from "../assets/images/IMG_7057.PNG";
 import WQ_BANNER from "../assets/images/WorldQuant-Logo-removebg-preview.png";
-import CBOE_IMG from "../assets/images/Cboe_Global_Markets_Logo.png"
+import CBOE_IMG from "../assets/images/Cboe_Global_Markets_Logo.png";
+
 
 const ExperienceContainer = styled.div`
   width: 100%;
+  margin-bottom:15%;
 `;
 const HeadingContainer = styled.div`
   align-self: center;
@@ -44,13 +46,13 @@ const SepLine = styled.div`
 
 const JourneyContainer = styled.div`
   display: flex;
-  height: 105em;
+  height: 120em;
   width: 100%;
   flex-direction: row;
   justify-content: center;
 `;
 const SepLineVer = styled.div`
-  height: 90%;
+  height: 100%;
   width: 0.5mm;
   background-color: #dcdcdc;
 `;
@@ -132,9 +134,11 @@ const ImgStyledBox = styled.div`
   transition: transform 500ms ease;
   &:hover {
     transform: scale(1.1);
-  };
+  }
   margin-bottom: 5px;
 `;
+
+
 
 function Experience() {
   return (
@@ -150,6 +154,23 @@ function Experience() {
       <JourneyContainer>
         {/* Left Experience Container */}
         <LeftContainer>
+          <LeftContentBox>
+            <LeftBox>
+              <Img style={{ alignSelf: "flex-end" }} src={CBOE_IMG}></Img>
+              <Title target="_blank">
+                <h3 style={{ margin: 0 }}>Derivative Strats Intern</h3> @ Cboe
+                Global Market
+              </Title>
+              <TimeWindow> June 21th 2021 - Present</TimeWindow>
+              <Details>
+                Using machine learning models tools to support new products,
+                index calculations, and various VIX derivatives analyses.
+              </Details>
+            </LeftBox>
+            <div style={ArrowContainer}>
+              <ArrowAnim rotate={true}></ArrowAnim>
+            </div>
+          </LeftContentBox>
           <LeftContentBox />
           <LeftContentBox>
             <LeftBox>
@@ -158,7 +179,7 @@ function Experience() {
                 href="https://github.com/styled-components/styled-components"
                 target="_blank"
               >
-                <h3 style={{ display: "inline" }}>Final 8@ Terminal</h3>
+                <h3 style={{ display: "inline" }}>Final 8@ Citadel Terminal</h3>
                 <br />
                 / West Coast Regional <br />
               </Title>
@@ -242,26 +263,37 @@ function Experience() {
             </div>
           </LeftContentBox>
         </LeftContainer>
-        
+
         <SepLineVer></SepLineVer>
         {/* Right Experience Container */}
         <RightContainer>
-          <RightContentBox >
+          <RightContentBox />
+          <RightContentBox>
             {/* <div style={{backgroundColor:"green", width:"100%", height:"100%"}}></div> */}
             <div style={ArrowContainer}>
               <ArrowAnim rotate={false}></ArrowAnim>
             </div>
             <RightBox>
-              <Img src={CBOE_IMG}></Img>
-              <Title target="_blank">
-                <h3 style={{ margin:0}}>Derivative Strats Intern</h3>  @ Cboe Global Market
+              <Img src={DATAOPEN_LOGO}></Img>
+              <Title
+                href="https://www.citadel.com/careers/the-data-open/"
+                target="_blank"
+              >
+                <h3 style={{ display: "inline" }}>3rd Place @ Citadel Datathon</h3>
+                <br />
+                Summer Invitational Datathon 2021<br />
               </Title>
-              <TimeWindow> June 21th 2021 - Present</TimeWindow>
-              <Details>
-              Using machine learning models tools to support new products, index calculations, and various VIX derivatives analyses.
-               
-              </Details>
 
+              <TimeWindow>
+                Team: 15
+                <br />
+                July 12th - July 19th
+              </TimeWindow>
+              <Details>
+                Selected to compete in the biggest Datathon event of the year, hosted by{" "}
+                <strong>Correlation 1 & Citadel</strong>. Created an improved review rating system for Airbnb listings using Machine Learning and Natural Language Processing techniques. <br/>
+                Created sentiment indicator using LDA and incorporated with supervised model techniques including RandomForest, XGBoost, SVM and multi-linear regression
+              </Details>
             </RightBox>
           </RightContentBox>
           <RightContentBox />
@@ -272,8 +304,8 @@ function Experience() {
             <RightBox>
               <Img src={RITC_LOGO}></Img>
               <Title href="https://ritc.rotman.utoronto.ca/" target="_blank">
-                <h3 style={{ display: "inline", margin:0}}>Rotman</h3> Internatinal
-                Trading Competeting
+                <h3 style={{ display: "inline", margin: 0 }}>Rotman</h3>{" "}
+                Internatinal Trading Competeting
               </Title>
               <TimeWindow> February 19th 2021</TimeWindow>
               <Details>
@@ -293,7 +325,8 @@ function Experience() {
                     height: "auto",
                     margin: 0,
                     padding: 0,
-                  }}>
+                  }}
+                >
                   <PhotoBox src={RITC_TEAM}></PhotoBox>
                 </a>
               </ImgStyledBox>
