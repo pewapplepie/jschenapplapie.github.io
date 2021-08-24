@@ -4,7 +4,7 @@ import myprofile_pic from "../assets/mypic.jpg";
 
 const TrapContainer = styled.div`
   position: relative;
-  height: 120em;
+  height: 140em;
   display: flex;
 `;
 const SvgContainer = {
@@ -224,35 +224,40 @@ function IntroTrap() {
               Fact about me and personality <Blink_wrapper2>. </Blink_wrapper2>{" "}
               <Blink_wrapper3>.</Blink_wrapper3>
             </Intro_title>
-            <br/>
-            I from Hsinchu City, Taiwan. <br/>
-            Also know as Silicon Valley in
-            Taiwan/ Home of Semiconductor <p/>
+            <br />
+            I from Hsinchu City, Taiwan. <br />
+            Also know as Silicon Valley in Taiwan/ Home of Semiconductor <p />
             I'm currently a Master student at UCLA Anderson School of Management
             with a B.S. in Chemistry at National Taiwan University <p />
             My passion in quant finance is driven by my desire to combine
             financial knowledge with in-depth data analysis and machine learning
             technique to surface impactful insight and facilitate sound-making
             decisions among various business strategies <p />I also enjoys
-            traveling, and already visited over 20+ countries across four continents. <p/>
-            I'm adventurous and constantly want to learn new thing <p/>
-            I'll prolly start doing youtube as well xD plz follow me then
-
+            traveling, and already visited over 20+ countries across four
+            continents. <p />
+            I'm adventurous and constantly want to learn new thing <p />
+            
           </Intro_p1>
           <Intro_p2>
             <Intro_title2>
               Formal Introduction <Blink_wrapper2>. </Blink_wrapper2>{" "}
               <Blink_wrapper3> .</Blink_wrapper3>
             </Intro_title2>
-            <br/>
-            Jeffrey is a MFE candidate at UCLA Anderson School of Management, class of 2021.<br/>
-            
-            His course projects across different topics within machine learning, quantitative assets management, empirical
-            analysis, derivatives, fixed income, investment and financial
-            decision making.
+            <br />
+            Jeffrey is a MFE candidate at UCLA Anderson School of Management,
+            class of 2021.
+            <br />
+            His course projects across different topics within machine learning,
+            quantitative assets management, empirical analysis, derivatives,
+            fixed income, investment and financial decision making.
             <p />
-            Jeffrey currently Intern at DStrats Team @ Cboe Global Market < br/>
-            Prior to Cboe, Jeffrey was an Quantitative Analyst Intern at{" "}
+            Jeffrey is a Derivative Strats intern at <a style={hyperstyle} href="https://www.cboe.com/"> Cboe Global Market </a>. Jeffrey
+            At Cboe Global Market Derivative Strats Team, he
+            delivered significant usage for product production, helped the team transform ideas into new products and
+            analyze various option trading strategies associated with derivative
+            products to improve the efficiency of the markets. <p/>
+
+            Prior to Cboe, Jeffrey was a Quantitative Analyst Intern at{" "}
             <a
               style={hyperstyle}
               href="https://www.rosetta-analytics.com/"
@@ -260,14 +265,10 @@ function IntroTrap() {
             >
               Rosetta Analytics
             </a>{" "}
-            ,where as an analyst he covered time series analysis, systematic
-            backtesting and construction on different portfolios.
-            <p />
-            Over the year of 2019, Jeffrey competed in International Quant
-            Championship hosted by the WorldQuant LLC and made into natioanl top
-            5. <p />
-            Before Finance, Jeffrey studied Chemistry and worked as an Undergraduate
-            Researcher under{""}
+            . He covered time series analysis, systematic backtesting, and construction on different portfolios. <p/>
+Over the year of 2019, Jeffrey competed in International Quant Championship hosted by the WorldQuant LLC and made into the national top 5.<p />
+            Before Finance, Jeffrey studied Chemistry and worked as an
+            Undergraduate Researcher under{""}
             <a
               href="https://cchlabblog.wordpress.com/"
               style={hyperstyle}
@@ -278,9 +279,8 @@ function IntroTrap() {
             for Prof. Hsu within the Analytical Chemistry area, specializing in
             Mass Spectrometry (MALDI) and Bioinformation data analysis.
             <p />
-            Jeffrey's experiences include AI-driven investment management firms,
-            global leading hedge fund, academia science research, and the
-            software industry.
+            Jeffrey's experiences include AI-driven investment management firms, global leading hedge fund, academia science research, and the software industry. 
+            Jeffrey help drive the quantitative value with an innovative mindset. 
           </Intro_p2>
         </Content_Intro>
       </Contents>
