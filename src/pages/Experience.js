@@ -313,7 +313,7 @@ function Experience({ reference, click }) {
               <Img src={RITC_LOGO}></Img>
               <Title href="https://ritc.rotman.utoronto.ca/" target="_blank">
                 <h3 style={{ display: "inline", margin: 0 }}>Rotman</h3>{" "}
-                Internatinal Trading Competeting
+                Internatinal Trading Competition
               </Title>
               <TimeWindow> February 19th 2021</TimeWindow>
               <Details>
