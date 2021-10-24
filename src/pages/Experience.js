@@ -161,7 +161,7 @@ function Experience({ reference, click }) {
               <TimeWindow> June 21th 2021 - Present</TimeWindow>
               <Details>
                 Using machine learning models tools to support new products,
-                index calculations, and various VIX derivatives analyses.
+                index calculations, and various VIX derivatives analysis.
               </Details>
             </LeftBox>
             <div style={ArrowContainer}>

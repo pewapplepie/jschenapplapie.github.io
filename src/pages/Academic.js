@@ -131,7 +131,7 @@ function Academis({ reference }) {
             <Context>
               <b>• Officer of Career Development </b>
               <br />
-              <b>• Coursework:</b> Machine Learning & Data Analytics, Quant
+              <b>• Coursework:</b> Statistical Arbitrage, Credit Markets, Machine Learning & Data Analytics, Quant
               Asset Management, Computational Finance, Stochastic Calculus,
               Fixed Income, Derivatives Markets, Empirical Methods in Finance,
               Econometrics, Investments, Risk Measurement and Management,

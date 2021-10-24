@@ -221,7 +221,7 @@ function IntroTrap() {
         <Content_Intro>
           <Intro_p1>
             <Intro_title>
-              Fact about me and personality <Blink_wrapper2>. </Blink_wrapper2>{" "}
+              Facts about me <Blink_wrapper2>. </Blink_wrapper2>{" "}
               <Blink_wrapper3>.</Blink_wrapper3>
             </Intro_title>
             <br />
@@ -240,18 +240,18 @@ function IntroTrap() {
           </Intro_p1>
           <Intro_p2>
             <Intro_title2>
-              Formal Introduction <Blink_wrapper2>. </Blink_wrapper2>{" "}
+              Introduction <Blink_wrapper2>. </Blink_wrapper2>{" "}
               <Blink_wrapper3> .</Blink_wrapper3>
             </Intro_title2>
             <br />
             Jeffrey is a MFE candidate at UCLA Anderson School of Management,
             class of 2021.
             <br />
-            His course projects across different topics within machine learning,
-            quantitative assets management, empirical analysis, derivatives,
-            fixed income, investment and financial decision making.
+            His course projects across different topics including Machine Learning, Statistical Arbitrage, 
+            Quantitative Assets Management, Empirical Methods, Derivatives,
+            Fixed Income, Investment and Econometrics.
             <p />
-            Jeffrey is a Derivative Strats intern at <a style={hyperstyle} href="https://www.cboe.com/"> Cboe Global Market </a>. Jeffrey
+            Jeffrey is a Quant Research Summer Associate of Derivative Strats Team at <a style={hyperstyle} href="https://www.cboe.com/"> Cboe Global Market </a>. 
             At Cboe Global Market Derivative Strats Team, he
             delivered significant usage for product production, helped the team transform ideas into new products and
             analyze various option trading strategies associated with derivative
@@ -265,8 +265,8 @@ function IntroTrap() {
             >
               Rosetta Analytics
             </a>{" "}
-            . He covered time series analysis, systematic backtesting, and construction on different portfolios. <p/>
-Over the year of 2019, Jeffrey competed in International Quant Championship hosted by the WorldQuant LLC and made into the national top 5.<p />
+            . He covered time series analysis, systematic backtestings, and construction on different portfolios. <p/>
+            Over the year of 2019, Jeffrey competed in International Quant Championship hosted by the WorldQuant LLC and made into the national top 5.<p />
             Before Finance, Jeffrey studied Chemistry and worked as an
             Undergraduate Researcher under{""}
             <a
@@ -279,8 +279,8 @@ Over the year of 2019, Jeffrey competed in International Quant Championship host
             for Prof. Hsu within the Analytical Chemistry area, specializing in
             Mass Spectrometry (MALDI) and Bioinformation data analysis.
             <p />
-            Jeffrey's experiences include AI-driven investment management firms, global leading hedge fund, academia science research, and the software industry. 
-            Jeffrey help drive the quantitative value with an innovative mindset. 
+            Jeffrey's experiences include financial service firms, global leading hedge fund, academia science research, and the software industry. 
+            Jeffrey helps drive the quantitative value with an innovative mindset. 
           </Intro_p2>
         </Content_Intro>
       </Contents>
