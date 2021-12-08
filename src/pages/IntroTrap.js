@@ -44,26 +44,28 @@ const Content_h1 = styled.div`
 `;
 
 const Profile_Img = styled.img`
-  /* display: block; */
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
+  display: block;
+  width: 104%;
+  height: 104%;
+  margin: -2% auto auto -2%; 
+  // border-radius: 50%;
   transition: transform 500ms ease;
-  background-size: cover;
+  // background-size: cover;
+  z-Index: -1;
 `;
 
 const Profile_Pic_Container = styled.div`
-  /* position: relative; */
+  position: relative;
   width: 25vh;
   height: 25vh;
   border-radius: 50%;
   overflow: hidden;
-  border-width: thick;
+  border-width: 5px;
   border-color: #c0c0c0;
   border-style: solid;
-  -ms-touch-action: none;
-  touch-action: none;
-  transition: transform 500ms ease;
+  // touch-action: none;
+  // -ms-touch-action: none;
+  // transition: transform 500ms ease;
   &:hover {
     border-color: #99ffff;
   }
