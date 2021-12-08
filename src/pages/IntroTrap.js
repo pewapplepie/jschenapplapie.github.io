@@ -63,6 +63,8 @@ const Profile_Pic_Container = styled.div`
   border-width: 5px;
   border-color: #c0c0c0;
   border-style: solid;
+  z-Index: 0;
+
   // touch-action: none;
   // -ms-touch-action: none;
   // transition: transform 500ms ease;
